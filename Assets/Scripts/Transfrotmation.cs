@@ -20,7 +20,7 @@ public class Transfrotmation : MonoBehaviour
         {
             transform.localPosition += transform.forward * _speed * Time.deltaTime;
             transform.Rotate(Vector3.up * _speed * Time.deltaTime);
-            //transform.localScale += Vector3.one * _speed * Time.deltaTime;
+            transform.localScale += Vector3.one * _speed * Time.deltaTime;
         }
 
     }
