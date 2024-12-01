@@ -18,9 +18,9 @@ public class Transfrotmation : MonoBehaviour
 
         if (_gameObject.CompareTag("Cube2"))
         {
-            transform.position += Vector3.forward * _speed * Time.deltaTime;
+            transform.localPosition += transform.forward * _speed * Time.deltaTime;
             transform.Rotate(Vector3.up * _speed * Time.deltaTime);
-            transform.localScale += Vector3.one * _speed * Time.deltaTime;
+            //transform.localScale += Vector3.one * _speed * Time.deltaTime;
         }
 
     }
