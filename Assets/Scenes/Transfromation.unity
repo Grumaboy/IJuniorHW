@@ -345,11 +345,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 379284085}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96c269fe41f77442b73ffb672670af7, type: 3}
+  m_Script: {fileID: 11500000, guid: 06330cf7516f8674abc72b21646e3b99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 0.2
-  _gameObject: {fileID: 379284085}
+  _speed: 0.5
 --- !u!1 &533521576
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,8 +360,8 @@ GameObject:
   - component: {fileID: 533521580}
   - component: {fileID: 533521579}
   - component: {fileID: 533521578}
+  - component: {fileID: 533521583}
   - component: {fileID: 533521577}
-  - component: {fileID: 533521581}
   - component: {fileID: 533521582}
   m_Layer: 0
   m_Name: Sphere
@@ -457,20 +456,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &533521581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 533521576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96c269fe41f77442b73ffb672670af7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _speed: 3
-  _gameObject: {fileID: 533521576}
 --- !u!54 &533521582
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -498,6 +483,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &533521583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533521576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac8dd57e7b7fb91449a2306ae0e4b2a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 5
 --- !u!1 &1320535259
 GameObject:
   m_ObjectHideFlags: 0
@@ -509,8 +507,8 @@ GameObject:
   - component: {fileID: 1320535263}
   - component: {fileID: 1320535262}
   - component: {fileID: 1320535261}
-  - component: {fileID: 1320535260}
   - component: {fileID: 1320535264}
+  - component: {fileID: 1320535260}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Cube1
@@ -613,11 +611,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1320535259}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96c269fe41f77442b73ffb672670af7, type: 3}
+  m_Script: {fileID: 11500000, guid: 816754bb31810de4497ab4edd55d3ff6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
-  _gameObject: {fileID: 1320535259}
+  _speed: 15
 --- !u!1 &1430027243
 GameObject:
   m_ObjectHideFlags: 0
@@ -766,8 +763,10 @@ GameObject:
   - component: {fileID: 1567223685}
   - component: {fileID: 1567223684}
   - component: {fileID: 1567223683}
-  - component: {fileID: 1567223682}
+  - component: {fileID: 1567223688}
+  - component: {fileID: 1567223687}
   - component: {fileID: 1567223686}
+  - component: {fileID: 1567223682}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Cube2
@@ -870,11 +869,36 @@ MonoBehaviour:
   m_GameObject: {fileID: 1567223681}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96c269fe41f77442b73ffb672670af7, type: 3}
+  m_Script: {fileID: 11500000, guid: 816754bb31810de4497ab4edd55d3ff6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 1
-  _gameObject: {fileID: 1567223681}
+  _speed: 30
+--- !u!114 &1567223687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567223681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06330cf7516f8674abc72b21646e3b99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 0.1
+--- !u!114 &1567223688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567223681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac8dd57e7b7fb91449a2306ae0e4b2a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 2
 --- !u!1 &2024014848
 GameObject:
   m_ObjectHideFlags: 0
